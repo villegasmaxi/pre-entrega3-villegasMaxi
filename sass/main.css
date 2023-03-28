@@ -1,0 +1,155 @@
+* {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-image: url(../imagenes/PastelDeFruta.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: clamp(1em, 5vw, 4em);
+}
+
+h2 {
+  color: white;
+  font-size: clamp(1.5em, 4vw, 3em);
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: 500;
+}
+
+li a {
+  color: black;
+}
+
+#header {
+  background-color: rgba(255, 255, 255, 0.9);
+  min-height: 6vh;
+  margin-top: 1em;
+}
+#header .header-contenedor {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: auto auto;
+}
+#header .header-contenedor ul {
+  list-style: none;
+}
+#header .header-contenedor ul a {
+  text-decoration: none;
+}
+#header .header-contenedor .header-logo img {
+  width: 50%;
+  height: auto;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+}
+#header .header-contenedor .header-title {
+  text-align: center;
+}
+#header .header-contenedor .header-title h1 {
+  color: orangered;
+  margin-right: 0.5em;
+}
+#header .header-contenedor .header-nav {
+  margin-top: 0.5em;
+  margin-right: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#header .header-contenedor .header-nav img {
+  width: 80%;
+  height: auto;
+  background-color: #f86706;
+}
+#header .header-contenedor .header-nav ul {
+  display: flex;
+  flex-direction: column;
+  display: none;
+  align-items: end;
+}
+#header .header-contenedor .header-nav ul li {
+  font-size: 1em;
+}
+#header .header-contenedor .header-bar {
+  grid-column: 1/4;
+}
+#header .header-contenedor .header-bar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#header .header-contenedor .header-bar ul li {
+  margin: 0 1em;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  min-height: 65vh;
+}
+#main .main-title {
+  margin-left: 2em;
+  margin-top: 1em;
+}
+#main .main-iframe {
+  align-self: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+#main .main-iframe iframe {
+  width: 95vw;
+  height: 60vh;
+}
+#main .form {
+  text-align: center;
+  padding-bottom: 20px;
+}
+#main .form .vertical {
+  background-image: url(../imagenes/silueta.jpg);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+  gap: 15px;
+  color: antiquewhite;
+}
+#main .main-nos .main-nos-section .main-nos-texto p {
+  font-size: clamp(1em, 3vw, 2em);
+  color: white;
+  margin-left: 2vw;
+}
+#main .main-nos.telon {
+  display: flex;
+}
+#main .main-nos.telon img {
+  max-width: 25%;
+}
+
+#footer .footer-contenedor {
+  display: flex;
+  flex-direction: column;
+}
+#footer .footer-contenedor img {
+  width: 5%;
+  height: auto;
+}
+#footer .footer-contenedor .footer-title {
+  display: flex;
+  justify-content: space-evenly;
+}
+#footer .footer-contenedor .footer-redes {
+  text-align: center;
+  padding: 0.5em;
+}
+#footer .footer-contenedor .footer-redes .twitter {
+  margin-right: 12em;
+}/*# sourceMappingURL=main.css.map */
