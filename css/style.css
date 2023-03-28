@@ -2,26 +2,24 @@
     font-family: sans-serif;
     font-weight: 400;
 }
-body {background-image: url(../imagenes/PastelDeFruta.png);
+body {background-image: url(../imagenes/torta-de-cumpleaños-37124885.png);
     background-position: center center;
-    background-size: cover;
+    background-size:contain;
     background-repeat: no-repeat;
     background-attachment: fixed;}
 
 
 
 /*generales*/
-header {
-    background-color: rgba(255, 255, 255, 0.9);
-    min-height: 6vh;
-}
+
 
 
 h1 {
     color:orangered;
     font-family: 'Cinzel Decorative', cursive;
-    font-size: clamp(1em, 5vw, 4em);
-    margin-top: 2%;
+    font-size: clamp(1.5em, 5vw, 5em);
+    margin-top: 3%;
+    font-weight: 600;
 }
 
 h2 {
@@ -36,92 +34,10 @@ li a {
 }
 
 /*header*/
-#header {
+header {
     margin-top: 1em;
 }
 
-#header .header-contenedor {
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: auto auto;
-}
-
-/*atencion estila todas las ul de header*/
-#header .header-contenedor ul {
-    list-style: none;
-}
-
-#header .header-contenedor ul a {
-    text-decoration: none;
-}
-
-
-
-.header-contenedor .header-nav {
-    margin-top: 0.5em;
-    margin-right: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-}
-
-.header-contenedor .header-nav ul {
-    display: flex;
-    flex-direction: column;
-    display: none;
-    align-items: end;
-
-}
-
-.header-contenedor .header-nav ul li {
-    font-size: 1em;
-}
-
-
-.header-contenedor .header-nav:hover ul {
-    display: flex;
-}
-
-
-.header-contenedor .header-nav img {
-    width: 80%;
-    height: auto;
-    background-color: #f86706;
-}
-
-.header-contenedor .header-logo img {
-    width: 50%;
-    height: auto;
-    margin-left: 0.5em;
-    margin-top: 0.5em;
-}
-
-#header .header-contenedor .header-title h1 {
-    color: orangered;
-    margin-right: 0.5em;
-}
-
-.header-contenedor .header-title {
-    text-align: center;
-}
-
-.header-contenedor .header-bar {
-    grid-column: 1/4;
-}
-
-.header-contenedor .header-bar ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.header-contenedor .header-bar ul li {
-    margin: 0 1em;
-}
-
-
-header .div{align-content: center;}
 
 /*main*/
 #main {
@@ -131,19 +47,15 @@ header .div{align-content: center;}
 }
 
 #main .main-title {
-    margin-left: 2em;
     margin-top: 1em;
 }
 
 #main .main-iframe {
-    align-self: center;
-    margin-top: 5vh;
+    
+    margin-top: 15vh;
     margin-bottom: 5vh;
-}
-
-#main .main-iframe iframe {
     width: 100vw;
-    height: 60vh;
+    height: 40vh;
 }
 
 #main .form {
@@ -178,34 +90,11 @@ header .div{align-content: center;}
 }
 
 
-#footer {
-    background-color: rgba(255, 255, 255, 0.7);
+footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 7em;
+    border: solid black 1px;
 }
-
-
-#footer .footer-contenedor {
-    display: flex;
-    flex-direction: column;
-}
-
- #footer .footer-contenedor img {
-    width: 25%;
-    height: auto;
-} 
-
- #footer .footer-contenedor .footer-title {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#footer .footer-contenedor .footer-redes {
-    text-align: center; padding: 0.5em;
-}
-
-/* #footer .footer-contenedor .footer-redes .twitter {
-    margin-right: 12em;
-} */
-
 
 @media(max-width:767px) {
     #header .header-contenedor .header-bar {
