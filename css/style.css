@@ -61,7 +61,7 @@ header {
 #main {
     display: flex;
     flex-direction: column;
-    min-height: 75vh;
+    min-height: 70vh;
 }
 
 #main .main-title {
@@ -73,7 +73,7 @@ header {
     padding: 5%;
     font-size: clamp(1.1em, 1.5vw, 1.5em);
     color: black;
-    max-width: 80%;
+    min-width: 90%;
     margin: auto;
 }
 
@@ -102,16 +102,15 @@ header {
     color: black;
 }
 
-#main .main-nos .main-nos-section .container p {}
-
-#main .main-nos .main-nos-telon {
-    display: flex;
+ 
+ #main .main-nos .container-fluid {
+    margin-left: 3%;
 }
 
-#main .main-nos .main-nos-telon img {
-    max-width: 25%;
+#main .main-nos .container-fluid img {
+    max-width: 23%; padding: 1%;
 }
-
+ 
 
 footer {
     background-color: rgba(255, 255, 255, 0.9);
@@ -131,16 +130,9 @@ footer {
 }
 
 @media(max-width:767px) {
-    #main .main-nos .main-nos-telon {
+    #main .main-nos .container-fluid{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-}
-
-@media (max-width:767px) {
-    #main .main-nos .main-nos-telon img {
-        max-width: 100%;
-    }
-
 }
