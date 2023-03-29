@@ -2,11 +2,22 @@
     font-family: sans-serif;
     font-weight: 400;
 }
-body {background-image: url(../imagenes/home.png);
-    background-position: center ;
-    background-size:contain;
+
+#body {
+    background-image: url(../imagenes/home.png);
+    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-attachment: fixed;}
+    background-attachment: fixed;
+}
+
+ .byn {
+    background-image: url(../imagenes/home-byn.png);
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 
 
@@ -15,24 +26,30 @@ body {background-image: url(../imagenes/home.png);
 
 
 h1 {
-    color:orangered;
+    color: orangered;
     font-family: 'Cinzel Decorative', cursive;
     font-size: clamp(2em, 6vw, 15em);
-    margin-top: 1%;
+ 
     font-weight: 600;
-    text-shadow: 3px 3px 5px black;
+    text-shadow: 3px 3px 5px rgb(83, 57, 17);
 }
 
 h2 {
-    color: white;
+    color: black;
     font-size: clamp(1.5em, 4vw, 3em);
     font-family: 'Cinzel Decorative', cursive;
     font-weight: 500;
+    margin-left: 5%;
+}
+
+h4 {
+    text-align: center;
 }
 
 li a {
-    color: black
+    color: orangered
 }
+
 
 /*header*/
 header {
@@ -44,15 +61,24 @@ header {
 #main {
     display: flex;
     flex-direction: column;
-    min-height: 65vh;
+    min-height: 75vh;
 }
 
 #main .main-title {
-    margin-top: 0.5em;
+    margin-top: 5%;
+}
+
+#main .container p {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5%;
+    font-size: clamp(1.1em, 1.5vw, 1.5em);
+    color: black;
+    max-width: 80%;
+    margin: auto;
 }
 
 #main .main-iframe {
-    
+
     margin-top: 15vh;
     margin-bottom: 5vh;
     width: 100vw;
@@ -65,7 +91,7 @@ header {
 }
 
 #main .form .vertical {
-    background-image: url(../imagenes/silueta.jpg);
+    background-color:grey;
     padding: 20px;
     border-radius: 10px;
     display: flex;
@@ -73,14 +99,10 @@ header {
     width: 40%;
     margin: 0 auto;
     gap: 15px;
-    color: antiquewhite;
+    color: black;
 }
 
-#main .main-nos .main-nos-section .main-nos-texto p {
-    font-size: clamp(1em, 3vw, 2em);
-    color: white;
-    margin-left: 2vw;
-}
+#main .main-nos .main-nos-section .container p {}
 
 #main .main-nos .main-nos-telon {
     display: flex;
@@ -93,41 +115,15 @@ header {
 
 footer {
     background-color: rgba(255, 255, 255, 0.9);
-    margin-top: 7em;
+    padding-top: 2em;
     border: solid black 1px;
 }
 
-@media(max-width:767px) {
-    #header .header-contenedor .header-bar {
-        display: none;
+
+@media(max-width:767px) {#main .form .vertical
+     {min-width:75%;
     }
 }
-
-@media(min-width:768px) {
-    #header .header-contenedor .header-nav {
-        display: none;
-    }
-}
-
-@media(min-width:768px) {
-    #header .header-contenedor .header-title {
-        grid-column: 2/4;
-    }
-}
-
-@media(max-width:767px) {
-    #footer .footer-contenedor .footer-title {
-        display: none;
-    }
-
-}
-
-@media(max-width:767px) {
-    #footer .footer-contenedor .footer-redes .twitter {
-        margin-right: 0%;
-    }
-}
-
 @media(max-width:767px) {
     #main .main-title {
         text-align: center;
