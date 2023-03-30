@@ -1,136 +1,87 @@
+/*vars*/
+@import "vars";
+
 * {
     font-family: sans-serif;
     font-weight: 400;
 }
 
-body {
-    background-image: url(../imagenes/PastelDeFruta.jpg);
-    background-position: center center;
-    background-size: cover;
+#body {
+    background-image: url(../imagenes/home.png);
+    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
+
+.byn {
+    background-image: url(../imagenes/home-byn.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*generales*/
+
 h1 {
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: clamp(1em, 5vw, 4em);
+    color: orangered;
+    font-family: $fontTitle;
+    font-size: clamp(2em, 6vw, 15em);
+    font-weight: 600;
+    text-shadow: 3px 3px 5px rgb(83, 57, 17);
 }
 
 h2 {
-    color: white;
+    color: black;
     font-size: clamp(1.5em, 4vw, 3em);
-    font-family: 'Cinzel Decorative', cursive;
+    font-family: $fontTitle;
     font-weight: 500;
+    margin-left: 5%;
+}
+
+h4 {
+    text-align: center;
 }
 
 li a {
-    color: black
+    color: orangered
 }
 
-#header {
-    background-color: rgba(255, 255, 255, 0.9);
-    min-height: 6vh;
+/*header*/
+header {
     margin-top: 1em;
-
-    .header-contenedor {
-        display: grid;
-        grid-template-columns: 1fr 5fr 1fr;
-        grid-template-rows: auto auto;
-
-        ul {
-            list-style: none;
-
-            a {
-                text-decoration: none;
-            }
-        }
-
-        .header-logo {
-            img {
-                width: 50%;
-                height: auto;
-                margin-left: 0.5em;
-                margin-top: 0.5em;
-            }
-        }
-
-        .header-title {
-            text-align: center;
-
-            h1 {
-                color: orangered;
-                margin-right: 0.5em;
-            }
-        }
-
-        .header-nav {
-            margin-top: 0.5em;
-            margin-right: 1em;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-
-            img {
-                width: 80%;
-                height: auto;
-                background-color: #f86706;
-            }
-
-            ul {
-                display: flex;
-                flex-direction: column;
-                display: none;
-                align-items: end;
-
-                li {
-                    font-size: 1em;
-                }
-            }
-        }
-
-        .header-bar {
-            grid-column: 1/4;
-
-            ul {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-
-                li {
-                    margin: 0 1em;
-                }
-            }
-        }
-    }
 }
 
+/*main*/
 #main {
     display: flex;
     flex-direction: column;
-    min-height: 65vh;
+    min-height: 70vh;
 
     .main-title {
-        margin-left: 2em;
-        margin-top: 1em;
+        margin-top: 5%;
     }
 
-    .main-iframe {
-        align-self: center;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-
-        iframe {
-            width: 95vw;
-            height: 60vh;
+    .container {
+        p {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 5%;
+            font-size: clamp(1.1em, 1.5vw, 1.5em);
+            color: black;
+            margin: auto;
         }
     }
 
     .form {
         text-align: center;
         padding-bottom: 20px;
+    }
 
+    .form {
         .vertical {
-            background-image: url(../imagenes/silueta.jpg);
+            background-color: rgb(197, 193, 193);
             padding: 20px;
             border-radius: 10px;
             display: flex;
@@ -138,54 +89,27 @@ li a {
             width: 40%;
             margin: 0 auto;
             gap: 15px;
-            color: antiquewhite;
-        }
-    }
-
-    .main-nos {
-        .main-nos-section {
-            .main-nos-texto {
-                p {
-                    font-size: clamp(1em, 3vw, 2em);
-                    color: white;
-                    margin-left: 2vw;
-                }
-            }
-        }
-    }
-
-    .main-nos.telon {
-        display: flex;
-
-        img {
-            max-width: 25%;
+            color: black;
+            border: 1px solid orangered;
         }
     }
 }
 
-#footer {
-    .footer-contenedor {
-        display: flex;
-        flex-direction: column;
+footer {
+    background-color: rgba(255, 69, 0, 0.2);
+    padding-top: 1em;
+    max-width: 90%;
+    margin: 5% auto;
+}
 
-        img {
-            width: 5%;
-            height: auto;
-        }
-
-        .footer-title {
-            display: flex;
-            justify-content: space-evenly;
-        }
-
-        .footer-redes {
-            text-align: center;
-            padding: 0.5em;
-
-            .twitter {
-                margin-right: 12em;
-            }
-        }
+@media(max-width:$mobile) {
+    #main .form .vertical {
+        min-width: 75%;
     }
+}
 
+@media(max-width:$mobile) {
+    #main .main-title {
+        text-align: center;
+    }
 }
