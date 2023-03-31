@@ -73,7 +73,6 @@ header {
 }
 
 
-
 #main .form {
     text-align: center;
     padding-bottom: 20px;
@@ -98,6 +97,8 @@ footer {
     padding-top: 1em;
     max-width: 90%;
 margin: 5% auto;
+border-top-left-radius: 5em;
+border-bottom-right-radius: 5em;
 }
 
 
