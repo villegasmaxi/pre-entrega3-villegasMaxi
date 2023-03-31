@@ -52,6 +52,7 @@ li a {
 /*header*/
 header {
     margin-top: 1em;
+
 }
 
 /*main*/
@@ -67,7 +68,7 @@ header {
     .container {
         p {
             background-color: rgba(255, 255, 255, 0.7);
-            padding: 5%;
+            padding: 10%;
             font-size: clamp(1.1em, 1.5vw, 1.5em);
             color: black;
             margin: auto;
@@ -115,3 +116,4 @@ footer {
         text-align: center;
     }
 }
+
