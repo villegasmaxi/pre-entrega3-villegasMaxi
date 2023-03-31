@@ -4,6 +4,7 @@
   font-weight: 400;
 }
 
+/*body*/
 #body {
   background-image: url(../imagenes/home.png);
   background-position: center;
@@ -88,6 +89,8 @@ footer {
   padding-top: 1em;
   max-width: 90%;
   margin: 5% auto;
+  border-top-left-radius: 5em;
+  border-bottom-right-radius: 5em;
 }
 
 @media (max-width: 767px) {
