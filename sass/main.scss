@@ -6,14 +6,22 @@
     font-weight: 400;
 }
 /*body*/
+
+
 #body {
     background-image: url(../imagenes/home.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    nav{
+        background:linear-gradient(45deg,rgb(245, 169, 141), rgb(241, 232, 149), rgb(228, 227, 227));
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 10s ease-in-out infinite;
+    }
+    
 }
-
 
 .byn {
     background-image: url(../imagenes/home-byn.png);
@@ -52,8 +60,7 @@ li a {
 /*header*/
 header {
     margin-top: 1em;
-
-}
+    }
 
 /*main*/
 #main {
@@ -98,12 +105,22 @@ header {
 }
 
 footer {
-    background-color: rgba(255, 69, 0, 0.2);
+    
+    
+    background-color:rgba(160, 158, 157, 0.5);
+
+
     padding-top: 1em;
     max-width: 90%;
     margin: 5% auto;
     border-top-left-radius: 5em;
     border-bottom-right-radius: 5em;
+}
+
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
 }
 
 @media(max-width:$mobile) {
