@@ -13,7 +13,7 @@
   background-attachment: fixed;
 }
 #body nav {
-  background: linear-gradient(45deg, rgb(245, 169, 141), rgb(241, 232, 149), rgb(228, 227, 227));
+  background: linear-gradient(45deg, rgb(245, 169, 141), rgb(201, 199, 199));
   background-size: 400% 400%;
   position: relative;
   animation: cambiar 10s ease-in-out infinite;
